@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<style>
+    table, tr, td{
+        border: 3px solid black;
+        border-collapse: collapse;
+    }
+    td{
+        width: 50px;
+        height: 50px;
+    }
+    .colored{
+        color: red;
+    }
+    .fill
+    {
+        background-color: black;
+    }
+    .text
+    {
+        content: ' \0041';
+        font-style: bold;
+        font-size :40px;
+        color: white;
+    }
+    td 
+    {
+        text-align: center;
+    }
+    .error
+    {
+        background-color: red;
+    }
+    .sphere 
+    {	
+        background-color: yellow;
+        animation-name: example;
+        animation-duration: 4s;
+    }
+    @keyframes example {
+        from {background-color: white;}
+        to {background-color: yellow;}
+    }
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+    .NewGame {
+         background-color: goldenrod;
+         font-size: 20px;
+         padding: 14px 40px;
+         border-radius: 12px;
+         width: 250px;
+         margin-left: 85px;
+    }
+    .LayoutComplete {
+         background-color: goldenrod;
+         font-size: 20px;
+         padding: 14px 40px;
+         border-radius: 12px;
+         width: 250px;
+         margin-top: 20px;
+         margin-left: 105px;
+         float: left;
+    }
+    .placeTiles{
+        background-color: red;
+        font-size: 20px;
+        padding: 14px 40px;
+        border-radius: 12px;
+        margin-top: 20px;
+        float: left;
+        margin-left: 20px;
+    }
+    .Resume{
+        background-color: goldenrod;
+        font-size: 20px;
+        padding: 14px 40px;
+        border-radius: 12px;
+        width: 250px;
+        margin-left: 85px;
+        margin-right: 15px;
+        float: right;
+    }
+    .reset
+    {
+        background-color: mediumslateblue;
+        font-size: 20px;
+        padding: 14px 40px;
+        border-radius: 12px;
+        width: 250px;
+        margin-right: 10px;
+        float: right;
+         
+    }
+    .CreateOwnTable{
+        background-color: mediumslateblue;
+        font-size: 20px;
+        padding: 14px 40px;
+        border-radius: 12px;
+        margin-left: 20px;
+    }
+    .back{
+        background-color: red;
+        font-size: 20px;
+        padding: 14px 40px;
+        border-radius: 12px;
+        
+    }
+    .mid {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .para-font
+    {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        color: midnightblue;
+        margin-left: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        
+    }
+    .lable-font
+    {
+        margin-left: 180px;
+        font-size: 22px;
+    }
+    .select
+    {
+        box-sizing: border-box;
+        font-size: 16px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        background-color: aqua;
+    }
+    .homepage
+    {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	    background-size: 400% 400%;
+	    animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    }
+    span
+    {
+        background-color: lightblue;
+        margin-left: 5px;
+        border: 2px solid black;
+        display: block;
+        width: 120px;
+        height: 30px;
+        font-size: 20px;
+        color: rgb(98, 19, 19);
+    }
+    .input
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        margin-left: 6rem;
+        margin-top: 0.7rem;
+        transition: all 0.3s;
+        transform: translateY(0rem);
+        margin-bottom: 50px;
+    }
+    .heading2
+    {
+        text-align: center;
+        margin-top: 0px;
+        font-family: "Sofia", sans-serif;
+        font-size: 30px;
+        text-shadow: 3px 3px 3px #ababab;
+    }
+    .gamepage
+    {
+        background-size: auto;
+        margin-top: 0px;
+        background-image: url("Div2.jpg");
+        margin-bottom: 0px;
+        height: 100%;
+    }
+    .rcvinput
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-top: 0.7rem;
+        transition: all 0.3s;
+        transform: translateY(0rem);
+    }
+    .revlabel
+    {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-style: Bold;
+        margin-left: 20px;
+    }
+    .h1
+    {
+        text-align: center;
+    }
+    .scoreboard
+    {
+        background-size: cover;
+        background-color: yellow;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 5px;
+        height: 450px; 
+    }
+</style>
+<body> 
+    <div id="homepage" class="homepage">
+        <br>
+        <h2 class="heading2"> 👑 LIGHT GAME 💡</h2>
+        <p class="para-font">
+            Once upon a time, King Unnamed of Nowhereland was both smiling and crying at the same time. He was smiling because his enormous brand-new palace with many spacious rooms and corridors has just been finished. He is also crying as these rooms need to be illuminated and kept warm, but the ongoing increase of utility costs affect him as well. So now it's time to think about the placement of the palace's light bulbs. We need to place them so that everything is properly lit, but we cannot install any unnecessary bulbs.
+            <br><br>
+            Rules  '💡' <br>
+            The king's palace has rooms with square shaped floors that consist of black and white tiles only. <br>
+            Light bulbs can only be placed above white tiles. <br>
+            The light from the light bulbs does not spread diagonally, only straight along the given row and column. <br>
+            The black tiles have objects placed on them, which block the propagation of light. <br>
+            Black cells can optionally contain an integer from 0 to 4. This indicates how many adjacent (bottom, top, right, left) cells contain light bulbs. If there is such a number, the puzzle must be solved accordingly! <br>
+            Two light bulbs can NEVER illuminate each other! <br>
+            The goal of the game is to place the light bulbs so that all the white tiles are illuminated. <br>
+            The game is played by one player until he solves the puzzle, so there is no need to manage multiple players at the same time or divide into rounds.
+        </p>
+        <br>
+        <input id="create" type="button" value="Create My Own Table" class="CreateOwnTable">
+        
+        <label for="select" class="lable-font">Choose Level</label>
+        <select id="diff" class="select">
+            <option value="1" class="select">Easy</option>
+            <option value="2" class="select">Advance</option>
+            <option value="3" class="select">Extreme</option>
+        </select>
+        <input id = "NewGame" type="button" value="Start Game" class="NewGame">
+        <input id = "Resume" type="button" value="Resume" class="Resume">
+        <img src="King-light.png" alt="King-light" class="mid">
+    </div>
+    <div id="gamepage" class="gamepage" hidden>
+        <br>
+        <span id="clock">
+            Timer : 
+            <label id="minutes">00</label>
+            <label id="colon">:</label>
+            <label id="seconds">00</label>
+          </span>
+        <h1 id="username" class="h1" >Player Name</h1>
+        <table id = "tab" class="center">
+        <input class="reset" id = "reset" type="button" value="Reset">
+        <input class="back" id="back" type="button" value="Back">
+        <input class="reset" id="save" type="button" value="Save">
+        <label id="rlabel" class="revlabel" for="rowIndex" hidden>Row Index (between 0 and Table Size - 1):</label>
+        <input type="number" class="rcvinput" id="row" name="rowIndex" min="0" max="tablesize.value" hidden>
+        <br><br>
+        <label id= "clabel" class="revlabel" for="colIndex" hidden>Column Index (between 0 and Table Size - 1):</label>
+        <input type="number" class="rcvinput" id="col" name="colIindex" min="0" max="tablesize.value" hidden>
+        <br><br>
+        <label id= "vallabel" class="revlabel" for="TileValue" hidden>Tiles Value (between 0 and 4):</label>
+        <input type="number" class="rcvinput" id="val" name="TileValue" min="0" max="tablesize.value" hidden>
+        <input id="placetiles" type="button" value="Place-Tiles" class="placeTiles" hidden>
+        <input id="layout-completed" type="button" value="LayOut Completed" class="LayoutComplete" hidden>
+        </table>
+        <input id="tablesize" type="number" value="7" class="input">
+        <input id="dynamic" type="button" value="Create-Table" class="NewGame">
+        <input id="startplaying" type="button" value="Start-Game" class="CreateOwnTable" hidden>
+    </div> 
+    <div id="scoreboard" class="scoreboard" hidden>
+          <h1 class="h1">CONGRATULATION YOU WON !</h1>
+          <br><br>
+          <h1 id="playername" class="h1"></h2>
+          <br>
+          <h1 id = "map" class="h1"></h1>
+          <h1 id="time" class="h1"></h2>
+          <input id = "backtomain" type="button" value="Back-To-MainPage" class="back">
+    </div>  
+</body>
+</html>
+<script src = "script.js" > </script>
+
+
+
+
+
