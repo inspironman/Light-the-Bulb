@@ -37,6 +37,7 @@ Game description
 ### Example of an incorrect solution
 
 The solution below is **incorrect** (regardless of the fact that all white cells are actually illuminated) because two light bulbs illuminate each other!
+
 ![image](https://user-images.githubusercontent.com/87647395/206874109-6221923e-d5c6-4fe1-a17a-392a312f6cac.png)
 
 Game implementation
